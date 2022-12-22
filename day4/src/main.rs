@@ -22,10 +22,10 @@ fn main() {
         let elf2: Vec<&str> = ranges[1].split('-').collect();
         let x1 = elf1[0].parse::<i32>().unwrap();
 
-        let y1 = elf1[1].parse::<i32>().unwrap();;
+        let y1 = elf1[1].parse::<i32>().unwrap();
 
-        let x2 = elf2[0].parse::<i32>().unwrap();;
-        let y2 = elf2[1].parse::<i32>().unwrap();;
+        let x2 = elf2[0].parse::<i32>().unwrap();
+        let y2 = elf2[1].parse::<i32>().unwrap();
         if overlaps(x1, y1, x2, y2) || overlaps(x2, y2, x1, y1) {
             sum += 1;
         }
