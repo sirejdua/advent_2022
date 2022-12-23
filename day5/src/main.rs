@@ -1,4 +1,3 @@
-use core::num;
 use std::{fs, str};
 
 fn process_diagram(diagram: &Vec<Vec<u8>>, num_stacks: usize) -> Vec<Vec<u8>> {
